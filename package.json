@@ -10,5 +10,17 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeforbush/note_taker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/aeforbush/note_taker/issues"
+  },
+  "homepage": "https://github.com/aeforbush/note_taker#readme"
 }
