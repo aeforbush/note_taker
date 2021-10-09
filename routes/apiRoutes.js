@@ -1,6 +1,7 @@
-// dependencies
+// dependencies 
 const router = require("express").Router();
-// const fs = require("fs");
+const path = require("path");
+const fs = require("fs");
 const { v4: uuidv4 } = require('uuid');
 
 
@@ -39,7 +40,7 @@ router.delete("/notes/:id", (req, res) => {
      const notesArray = notes.filter(item => {
          return item.id !== noteId
      });
-     fs.writeFile('../db/db.json', JSON.stringify(notesArray), (err, data) => {
+     fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(notesArray), (err, data) => {
          console.log("Deleted note.")
          if (err) throw err;
          res.json(notesArray)

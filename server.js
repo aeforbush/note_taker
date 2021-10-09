@@ -1,7 +1,7 @@
 // dependencies
 const express = require("express");
 const path = require("path");
-const fs = require("fs");
+// const fs = require("fs");
 
 // point server to route files
 const apiRoutes = require("./routes/apiRoutes");
